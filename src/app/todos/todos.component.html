@@ -1,0 +1,8 @@
+Title: <input [(ngModel)]="title" />
+<button (click)="addTodo()">Add Todo</button>
+<div *ngFor="let item of todos">
+  {{item.title}} <button (click)="removeTodo(item)">Remove</button>
+</div>
+
+<button mat-icon-button="accent" (click)="sync()"></button>
+<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
